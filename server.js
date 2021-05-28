@@ -22,7 +22,7 @@ server.get('/weather',(req,res)=>{
    let lat = req.query.lat;
    let lon = req.query.lon;
     let searchQuery = weatherData.find(item=>{
-        if (cityNameData.toLowerCase() == item.city_name.toLowerCase() && lat == item.lat && lon == item.lon)
+        if (cityNameData.toLowerCase() == item.city_name.toLowerCase() )
         return item;
     })
     
