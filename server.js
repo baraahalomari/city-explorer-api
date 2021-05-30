@@ -12,6 +12,9 @@ server.use(cors());
 
 const PORT = process.env.PORT;
 
+server.get('/',(req,res)=>{
+    res.send('Hello');
+})
 
 server.get('/weather',weatherShow);
 
